@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "c19c0d6d9fb6700d7ccbf018b6396d7a"
+name = "app-learning"
+handle = "app-learning-2"
+application_url = "https://notebook-query-impose-essays.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "learning-faisal-217.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_products"
+
+[auth]
+redirect_urls = [
+  "https://notebook-query-impose-essays.trycloudflare.com/auth/callback",
+  "https://notebook-query-impose-essays.trycloudflare.com/auth/shopify/callback",
+  "https://notebook-query-impose-essays.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
